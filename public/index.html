@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,52 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+
+  <title>Main page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/website/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/website/css/owl.carousel.css" />
+  <link rel="stylesheet" href="/website/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="/website/css/style.css" />
+  <link rel="stylesheet" href="/website/css/responsive.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" />
+   
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+  <link rel="stylesheet" href="/website/css/owl.carousel.css" />
+  <link rel="stylesheet" href="/website/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="/website/css/style.css" />
+  <link rel="stylesheet" href="/website/css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.css"
+    integrity="sha512-8D+M+7Y6jVsEa7RD6Kv/Z7EImSpNpQllgaEIQAtqHcI0H6F4iZknRj0Nx1DCdB+TwBaS+702BGWYC0Ze2hpExQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- AOS LINK -->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" />
+  <!-- <title>React App</title> -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +77,721 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    <script>
+      function showPopup(id) {
+        document.getElementById(id).style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+      }
+      
+      function hidePopup(id) {
+        document.getElementById(id).style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+      }
+      </script>
+      <script>
+      const registrationBtn = document.getElementById("registration-btn");
+      const otpPopup = document.getElementById("otp-popup");
+      const otpInput = document.getElementById("otp-input");
+      
+      // registrationBtn.addEventListener("click", () => {
+      //   otpPopup.style.display = "block";
+      // });
+      
+      // otpPopup.addEventListener("submit", (event) => {
+      //   event.preventDefault();
+      //   // Add code to verify OTP and complete registration
+      // });
+      
+      </script>
+      <script>
+      function renderToast(objectAssign = {}) {
+        $.toast({
+          text: objectAssign.message ? objectAssign.message : "message",
+          icon: objectAssign.icon ? objectAssign.icon : "info",
+          loader: true, // Change it to false to disable loader
+          loaderBg: "#9EC600", // To change the background
+        });
+      }
+      </script>
+      
+      
+      
+      
+      <!-- Otp  -->
+      <script>
+      function getFormData($form) {
+        var unindexed_array = $form.serializeArray();
+        var indexed_array = {};
+      
+        $.map(unindexed_array, function (n, i) {
+          indexed_array[n["name"]] = n["value"];
+        });
+      
+        return indexed_array;
+      }
+      const formADD = $("#addOtp");
+      formADD.on("submit", submitHandler);
+      function submitHandler(e) {
+        e.preventDefault();
+      
+        var formData = getFormData($("#addOtp"));
+        // console.log(formData);
+      
+        // DO POST
+        $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "/website/otpverify",
+          data: JSON.stringify(formData),
+        })
+          .done((res) => {
+            if (res.error == true) {
+              renderToast({ message: res.message, icon: "error" });
+            } else {
+              renderToast({ message: res.message, icon: "success" });
+              setTimeout(() => {
+                window.location.href = "/website/businesstype";
+              }, 1000);
+            }
+          })
+          .fail(function (xhr, status, error) {
+            console.log(xhr.responseText);
+          });
+      }
+      
+      //
+      </script>
+      <!-- Otp  -->
+      
+      
+      <!-- Login  -->
+      <script>
+      function getFormData($form) {
+        var unindexed_array = $form.serializeArray();
+        var indexed_array = {};
+      
+        $.map(unindexed_array, function (n, i) {
+          indexed_array[n["name"]] = n["value"];
+        });
+      
+        return indexed_array;
+      }
+      const formAdd = $("#addformLogin");
+      formAdd.on("submit", submitHandler);
+      function submitHandler(e) {
+        e.preventDefault();
+      
+        var formData = getFormData($("#addformLogin"));
+        // console.log(formData);
+      
+        // DO POST
+        $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "/website/login",
+          data: JSON.stringify(formData),
+        })
+          .done((res) => {
+            if (res.error == true) {
+              renderToast({ message: res.message, icon: "error" });
+            } else {
+              renderToast({ message: res.message, icon: "success" });
+              setTimeout(() => {
+                window.location.href = "/website/deshboard";
+              }, 1000);
+            }
+          })
+          .fail(function (xhr, status, error) {
+            console.log(xhr.responseText);
+          });
+      }
+      
+      //
+      </script>
+      <!-- Login  -->
+      
+      
+      <!--  -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+      
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
+      
+      
+      <script src="/website/js/bootstrap.min.js"></script>
+      <script src="/website/js/owl.carousel.min.js"></script>
+      <script src="/website/js/popper.min.js"></script>
+      <script src="/website/js/slick.min.js"></script>
+      <script src="/website/js/custom.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+
+      
+      <!-- AOS LINK -->
+      <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+      
+      
+      
+      <script>
+      // AOS js
+      AOS.init({
+      duration: 1200,
+      })
+      </script>
+
+      <script>
+//         plugins: [
+//     // other plugins,
+//     new webpack.ProvidePlugin({
+//         $: 'jquery',
+//         jQuery: 'jquery',
+//         'window.jQuery': 'jquery',
+ 
+//     }),
+
+// ]
+      </script>
+
+
+
+<script>
+  // nav active menu js
+$(document).ready(function () {
+  $(".mean-toggle").click(function () {
+    $(".mean-toggle").toggleClass("active");
+    $("nav").toggleClass("active");
+  });
+});
+
+// upload single image with preview image in next div js
+
+// function readURL(input) {
+//   if (input.files && input.files[0]) {
+//     var reader = new FileReader();
+//     reader.onload = function (e) {
+//       $("#imagePreview").css(
+//         "background-image",
+//         "url(" + e.target.result + ")"
+//       );
+//       $("#imagePreview").hide();
+//       $("#imagePreview").fadeIn(650);
+//     };
+//     reader.readAsDataURL(input.files[0]);
+//   }
+// }
+// $("#imageUpload").change(function () {
+//   readURL(this);
+// });
+
+
+// upload single image with preview image in next div js
+// function readURL(input) {
+//   if (input.files && input.files[0]) {
+//     var reader = new FileReader();
+//     reader.onload = function (e) {
+//       $("#multi_img").css(
+//         "background-image",
+//         "url(" + e.target.result + ")"
+//       );
+//       $("#multi_img").hide();
+//       $("#multi_img").fadeIn(650);
+//     };
+//     reader.readAsDataURL(input.files[0]);
+//   }
+// }
+// $("#demoimage").change(function () {
+//   readURL(this);
+// });
+
+
+
+// upload single image with preview image in next div js this script in two div background image change //
+
+function readURL(input, previewDiv) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      $(previewDiv).css("background-image", "url(" + e.target.result + ")");
+      $(previewDiv).hide().fadeIn(650);
+      $("#multi_img").css('border', 'none');
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imageUpload").change(function () {
+  readURL(this, "#imagePreview");
+  $("#imagePreview").css('border', 'none');
+});
+
+$("#BannerImage").change(function () {
+  readURL(this, "#multi_img");
+});
+
+
+
+
+
+
+
+// upload single banner image with preview image in next div js
+
+$(document).ready(function () {
+  var readURL = function (input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $(".profile-pic").attr("src", e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  };
+
+  $("#upload-banner-imgfile").on("change", function () {
+    readURL(this);
+  });
+
+  // $(".upload-button").on('click', function() {
+  //    $(".file-upload").click();
+  // });
+});
+
+
+
+
+
+
+
+
+
+// Upload Multipale Image with Preview and remove option or more image add after upload
+jQuery(document).ready(function () {
+  ImgUpload();
+});
+
+function ImgUpload() {
+  var imgWrap = "";
+  var imgArray = [];
+  var files = [];
+  var inputfile;
+
+  $(".upload__inputfile").each(function () {
+    inputfile = $(this);
+
+    $(this).on("change", function (e) {
+
+      $("#upload-button img").css('border', 'none');
+      $(".upload__img-wrap").css('border', '5px dotted #ccc');
+
+      imgWrap = $(this).closest(".upload__box").find(".upload__img-wrap");
+
+      $(".profile-pic").css('display', 'none');
+      
+
+      var maxLength = $(this).attr("data-max_length");
+
+
+      files = files.concat(Array.from(e.target.files));
+
+      // create new files array
+      var newFiles = [];
+
+      // store all new image files in an array
+      files.forEach(function (file) {
+        if (file.type.match('image')) {
+          newFiles.push(file);
+        }
+      });
+
+    const modifiedfileList = new DataTransfer();
+
+    newFiles.map(function (f) {
+      modifiedfileList.items.add(f);
+    });
+    $('.upload__inputfile')[0].files = modifiedfileList.files;
+
+
+
+
+    if (files.length > maxLength) {
+      alert('Maximum limit reached. You can upload a maximum of ' + maxLength + ' images.');
+
+      
+
+      // all images removed
+      imgWrap.empty();
+      
+      inputfile.val('');
+
+      $("#upload-button img").css('border', '5px dotted #ccc');
+      $(".profile-pic").css('display', 'block');  // Show the profile picture
+      $(".upload__img-wrap").css('border', 'none');
+
+
+      files = [];
+
+      return;
+    }
+
+    files = files.filter(function (file, index, self) {
+     
+      return (
+        
+        index === self.findIndex(function (f) {
+          
+          return f.name === file.name;
+          
+        })
+        
+      );
+    });
+
+    imgWrap.empty();
+
+    files.forEach(function (f, index) {
+      if (!f.type.match('image')) {
+        return;
+      }
+
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var html =
+          "<div class='upload__img-box'><div style='background-image: url(" +
+          e.target.result +
+          ")' data-number='" +
+          index +
+          "' data-file='" +
+          f.name +
+          "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+        imgWrap.append(html);
+      };
+      reader.readAsDataURL(f);
+    });
+
+    inputfile.val(files.length);
+    });
+  });
+
+  $("body").on("click", ".upload__img-close", function (e) {
+    var file = $(this).parent().data("file");
+    const modifiedfileList = new DataTransfer();
+
+    var updatedFiles = $.grep(files, function (item) {
+      return item.name !== file;
+    });
+    files = updatedFiles;
+    
+    $(this).parent().parent().remove();
+
+
+    updatedFiles.map(function (f) {
+      modifiedfileList.items.add(f);
+    });
+    $('.upload__inputfile')[0].files = modifiedfileList.files;
+
+
+    // Check if all upload__img-box elements are deleted
+    if (imgWrap.children().length === 0) {
+      $("#upload-button img").css('border', '5px dotted #ccc');
+      $(".profile-pic").css('display', 'block');  // Show the profile picture
+      $(".upload__img-wrap").css('border', 'none');
+    }
+
+    inputfile.val(files.length);
+
+    
+
+
+     // Update the overlay with the updated total number of images
+    //  $("#multi_img .overlay-text").text("More +" + imgArray.length);
+  });
+}
+
+
+
+
+
+
+
+
+// upload multiple image with preview image in next div js
+$(document).ready(function () {
+  $("#fileInput").change(function () {
+    $("#preview").empty();
+    var files = this.files;
+    var count = files.length;
+    var sizeLimit = 15;
+    if (count > sizeLimit) {
+      alert("You can only upload up to " + sizeLimit + " files.");
+      return false;
+    }
+    for (var i = 0; i < count; i++) {
+      var file = files[i];
+      var imageType = /image.*/;
+      if (!file.type.match(imageType)) {
+        alert("Only images can be uploaded.");
+        continue;
+      }
+      var img = document.createElement("img");
+      img.classList.add("image-preview");
+      var reader = new FileReader();
+      reader.onload = (function (aImg) {
+        return function (e) {
+          aImg.src = e.target.result;
+          const valueSrc = (aImg.src = e.target.result);
+
+          $(".image-preview").attr("value", valueSrc);
+        };
+      })(img);
+      reader.readAsDataURL(file);
+      $("#preview").append(img);
+
+      // $('.image-preview').attr('name', 'image-preview');
+      let imgpreview = $(".image-preview");
+
+      for (let i = 0; i < imgpreview.length; i++) {
+        imgpreview[i].setAttribute("name", "image-preview" + i);
+      }
+    }
+  });
+});
+
+
+
+
+
+//next btn js
+$(".btnNext").click(function () {
+  $(".nav-tabs > .active").next("li").find("a").trigger("click");
+});
+
+
+
+
+
+
+
+
+
+
+// owl carousel js
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  margin: 10,
+  nav: false,
+  dots: false,
+  mouseDrag: true,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 7,
+    },
+  },
+});
+
+
+// Do something with the selected file, like upload it to a server
+const uploadButton = document.getElementById("upload-button");
+// uploadButton.addEventListener("click", function () {
+//   const fileInput = document.createElement("input");
+//   fileInput.type = "file";
+//   fileInput.click();
+// });
+// fileInput.addEventListener("change", function () {
+//   const selectedFile = fileInput.files[0];
+//   // Do something with the selected file, like upload it to a server
+// });
+
+//   const links = document.querySelectorAll('navbar-nav a');
+//    console.log(links)
+//   links.forEach(link => {
+//     link.addEventListener('click', function (event) {
+//       console.log(event)
+//         event.preventDefault();
+//         // Remove active class from all links
+//         links.forEach(link => link.classList.remove('active'));
+//         // Add active class to clicked link
+//         this.classList.add('active');
+//     });
+// });
+
+// $(document).ready(function() {
+//   // Add active class to clicked link and remove it from others
+//   $('.nav-link').click(function() {
+//     $('.nav-link').removeClass('active');
+//     $(this).addClass('active');
+//   });
+
+//   // Set About link as active on click and remove active from other links
+//   $('#about-link').click(function() {
+//     $('.nav-link').removeClass('active');
+//     $(this).addClass('active');
+//   });
+
+//   // Set Services link as active on click and remove active from other links
+//   $('#services-link').click(function() {
+//     $('.nav-link').removeClass('active');
+//     $(this).addClass('active');
+//   });
+// });
+
+// .navbar-nav .nav-link.active {
+//   background-color: #007bff;
+//   color: #fff;
+// }
+
+// user_login Page Option select change bg color of active class
+
+$(".registation-option-row .option_regis").on("click", function () {
+  $(".registation-option-row .option_regis").removeClass("reg_active");
+  $(this).addClass("reg_active");
+
+  var bgColor = $(this).data("skin");
+  $("body").css("background-color", bgColor);
+});
+
+
+
+
+
+
+
+
+
+// Change password eyes icon with input tpye text by jquery
+
+// Create password field
+$(".eyes-toggle-password").click(function () {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var inputPass = $($(this).attr("toggle"));
+  var inputPassword = $(".use_registration_password");
+  if (inputPassword.attr("type") == "password") {
+    inputPassword.attr("type", "text");
+  } else {
+    inputPassword.attr("type", "password");
+  }
+});
+
+
+
+
+// Create confirm repeat password field
+$(".eyes-toggle-Rpassword").click(function () {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var inputPass = $($(this).attr("toggle"));
+  var inputPassword = $(".use_registration_Rpassword");
+  if (inputPassword.attr("type") == "password") {
+    inputPassword.attr("type", "text");
+  } else {
+    inputPassword.attr("type", "password");
+  }
+});
+
+
+
+
+// Create confirm repeat password field
+$(".eyes-toggle-login_password").click(function () {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var inputPass = $($(this).attr("toggle"));
+  var inputPassword = $(".user_login_pass");
+  if (inputPassword.attr("type") == "password") {
+    inputPassword.attr("type", "text");
+  } else {
+    inputPassword.attr("type", "password");
+  }
+});
+
+
+
+
+
+// Script for video
+$(document).ready(function () {
+  $(".video-layer").click(function () {
+    $(".video-layer").css({ display: "none" });
+    $("video").trigger("play");
+  });
+});
+
+
+
+
+
+// -----Country Code Selection
+var mobileCodeInput = $("#mobile_code");
+
+mobileCodeInput.intlTelInput({
+  initialCountry: "ae",
+  separateDialCode: true,
+  // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+});
+
+// Set the default country code
+var defaultCountryCode = mobileCodeInput.intlTelInput("getSelectedCountryData").dialCode;
+mobileCodeInput.val("+" + defaultCountryCode);
+
+// Update the input with the selected country code
+mobileCodeInput.on("countrychange", function() {
+  var countryCode = mobileCodeInput.intlTelInput("getSelectedCountryData").dialCode;
+  mobileCodeInput.val("+" + countryCode);
+});
+
+
+
+
+
+
+
+// Script for input type check box after bg color change 
+  // $(document).ready(function() {
+  //   var all_dayinput = document.getElementsByClassName('all_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('sun_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('mon_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('tue_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('wed_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('thu_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('fri_dayinput');
+  //   // var all_dayinput = document.getElementsByClassName('sat_dayinput');
+
+  //   $(all_dayinput).click(function() {
+  //     if (this.checked) {
+  //       $(this).parent().css('background', 'red');
+  //     } else {
+  //       $(this).parent().css('background', 'white');
+  //     }
+  //   });
+  // });
+
+
+
+
+
+
+  // sidebar dropdown menu icon rotate script
+
+  $(document).ready(function() {
+
+    $(".main-sidebar .sidebar-menu li").click(function() {
+      console.log('clicked');
+    });
+
+  });
+
+
+
+</script>
+</body>
+
 </html>
