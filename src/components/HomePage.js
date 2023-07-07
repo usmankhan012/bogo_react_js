@@ -66,7 +66,7 @@ function HomePage() {
                     <div className="row">
                         <div className="col-md-6 col-lg-4">
 
-                            <div className="browse_inner_section" data-aos="fade-up">
+                            <div className="browse_inner_section" >
                                 <img
                                     src="/images/Rectangle 223.png"
                                     alt=""
@@ -80,8 +80,8 @@ function HomePage() {
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4">
-                            {/*<h2>nj</h2>/*/}
-                            <div className="browse_inner_section" data-aos="fade-down">
+                            {/* <h2>nj</h2>/ */}
+                            <div className="browse_inner_section" >
                                 <img
                                     src="/images/Rectangle 224-1.png"
                                     alt=""
@@ -95,7 +95,7 @@ function HomePage() {
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4">
-                            <div className="browse_inner_section" data-aos="fade-up">
+                            <div className="browse_inner_section" >
                                 <img
                                     src="/images/Rectangle 224.png"
                                     alt=""
@@ -110,12 +110,12 @@ function HomePage() {
                         </div>
                     </div>
                     <div className="browse_bottom_section">
-                        <OwlCarousel items={3}
-                            className="owl-theme"
+                        <OwlCarousel id='owl-carousel' items={3}
+                            className="owl-carousel owl-theme"
                             loop
                             dots={false}
                             autoPlay={true}
-                            margin={8} >
+                            margin={30} >
                             <div className='item' ><img className="img " src={'/images/image5.png'} />
                                 <p>Restaurants</p>
                             </div>
