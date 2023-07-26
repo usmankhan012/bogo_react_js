@@ -36,7 +36,7 @@ function Getregister() {
                                         <a className="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
                                             <input type="radio" className="btn-check" name="business_category_id" value="<%= element._id %>" id="buss_type" autocomplete="off" checked />
                                             <label className="btn businessCategoryID" data-id="<%=  element._id %>" for="option1">
-                                                <img src="/images/Business_Category" alt=""/>
+                                                <img src="/images/Business_Category" alt="" />
                                                 {/* <span><%= element.name %></span> */}
                                             </label>
                                         </a>
@@ -843,7 +843,7 @@ function Getregister() {
                                         <div className="col-12">
                                             <div className="form_left_content_section">
                                                 <h4>Instagram</h4>
-                                                <button className="form_facebook " style={{backgroundColor: "#029CAB;"}}>Connect to Instagram</button>
+                                                <button className="form_facebook " style={{ backgroundColor: "#029CAB;" }}>Connect to Instagram</button>
                                             </div>
                                         </div>
 
@@ -1331,8 +1331,8 @@ show_box();
                 });
 });
 
-        {/* </script> */} 
-    
+        {/* </script> */}
+
 
 
 

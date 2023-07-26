@@ -3,6 +3,7 @@ import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Footer from './Footer';
 
 
 function HomePage() {
@@ -115,7 +116,9 @@ function HomePage() {
                             loop
                             dots={false}
                             autoPlay={true}
-                            margin={30} >
+                            autoplayTimeout={3000}
+                            margin={30}
+                        >
                             <div className='item' ><img className="img " src={'/images/image5.png'} />
                                 <p>Restaurants</p>
                             </div>
@@ -172,6 +175,7 @@ function HomePage() {
                 </div>
 
             </div>
+            
         </>
     )
 }

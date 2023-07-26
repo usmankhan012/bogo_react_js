@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Business() {
     return (
@@ -98,9 +99,9 @@ function Business() {
                                 Buy One Get One offers that align with your real-time inventory,
                                 capacity, and business needs.
                             </p>
-                            <a href="/website/user/register"
+                            <Link to="/Getregister"
                             >Sign Up Now <i className="fa fa-arrow-right"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

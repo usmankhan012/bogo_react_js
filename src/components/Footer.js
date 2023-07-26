@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import './App.css';
 
 function Footer() {
@@ -11,10 +12,10 @@ function Footer() {
                             <div className="footer_inner_section">
                                 <h4>The Company</h4>
                                 <ul>
-                                    <li><a href="/website/pages/about">About Us</a></li>
-                                    <li><a href="/website/pages/pricing">Pricing</a></li>
-                                    <li><a href="/website/pages/">Merchant Directory</a></li>
-                                    <li><a href="/website/pages/brand_ambassadors">Brand Ambassador Program</a></li>
+                                    <li><Link to="/aboutUs">About Us</Link></li>
+                                    <li><Link to="/pricing">Pricing</Link></li>
+                                    <li><Link to="/Bogo_directory">Merchant Directory</Link></li>
+                                    <li><Link to="/brand_ambassadors">Brand Ambassador Program</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -23,13 +24,13 @@ function Footer() {
                                 <h4>The App</h4>
                                 <ul>
                                     <li className="footer-app-icon">
-                                        <a href="#">Customers</a>
+                                        <Link to="#">Customers</Link>
                                     </li>
                                     <li className="footer-app-icon">
-                                        <a href="/website/pages/business">Businesses</a>
+                                        <Link to="/Business">Businesses</Link>
                                     </li>
                                     <li className="footer-app-icon">
-                                        <a href="/website/pages/brand_ambassadors">For Influencers</a>
+                                        <Link to="/brand_ambassadors">For Influencers</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -49,8 +50,8 @@ function Footer() {
 
                                         </span>
                                     </li>
-                                    <li><a href="/website/pages/TermsConditions">Terms & Conditions</a></li>
-                                    <li><a href="/website/pages/privacyPolicy">Privacy Policy</a></li>
+                                    <li><Link to="/TermsConditions">Terms & Conditions</Link></li>
+                                    <li><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
 
                                     <li className="footer-playstrore-icon">
                                         <a href="https://play.google.com/store/apps/details?id=com.bogoapp.bogoapp"
@@ -82,7 +83,7 @@ function Footer() {
                                     className="btn btn-primary me-3 text-white"
                                     style={{backgroundColor: "#1478a9"}}
                                 >
-                                    <a href="website/pages/contact">Contact Us </a><i className="fa fa-arrow-right" aria-hidden="true"></i>
+                                    <Link to="/Contact">Contact Us </Link><i className="fa fa-arrow-right" aria-hidden="true"></i>
 
                                 </button>
                             </div>

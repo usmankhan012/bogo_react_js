@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Pricing() {
     return (
@@ -44,7 +45,7 @@ function Pricing() {
                                                     1 voucher per week, 1 voucher per merchant
                                                 </li>
                                             </ul>
-                                            <a href="" className="second-link">Choose this plan</a>
+                                            <Link to="" className="second-link">Choose this plan</Link>
                                         </div>
                                     </div>
                                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
@@ -60,7 +61,7 @@ function Pricing() {
                                                     platform
                                                 </li>
                                             </ul>
-                                            <a href="" className="second-link">Choose this plan</a>
+                                            <Link to="" className="second-link">Choose this plan</Link>
                                         </div>
                                     </div>
                                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
@@ -79,7 +80,7 @@ function Pricing() {
                                                     contained on the platform and they never expire
                                                 </li>
                                             </ul>
-                                            <a href="">Choose this plan</a>
+                                            <Link to="#">Choose this plan</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -139,10 +140,10 @@ function Pricing() {
                             </div>
                             <div className="bacome_right_outer_section">
                                 <p>
-                                    <a href="/website/pages/brand_ambassadors"
+                                    <Link to="/brand_ambassadors"
                                     >Join Influencer Program
                                         <i className="fa fa-arrow-right pl-2" aria-hidden="true"></i>
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -171,10 +172,10 @@ function Pricing() {
                                         The BOGO App’s Dynamic Campaign Management system
                                     </p>
                                     <div className="arrow-box">
-                                        <a href="/website/pages/business"
+                                        <Link to="/Business"
                                         >BOGO For Business
                                             <i className="fa fa-arrow-right pl-2" aria-hidden="true"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

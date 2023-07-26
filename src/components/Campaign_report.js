@@ -181,42 +181,6 @@ function Campaign_report() {
 
 
 
-{/* <!-- All check box input script  --> */}
-{/* <script>
-    $(document).ready(function () {
-    $('.selectall').click(function () {
-        $('.selectedId').prop('checked', this.checked);
-    });
-
-    $('.selectedId').change(function () {
-        var check = ($('.selectedId').filter(":checked").length == $('.selectedId').length);
-        $('.selectall').prop("checked", check);
-    });
-});
-</script> */}
-
-
-
-{/* <!-- Tab Slider by jquey script  --> */}
-{/* <script>
-  // Show the first tab and hide the rest
-$('#tabs-nav li:first-child').addClass('active');
-$('.tab-content').hide();
-$('.tab-content:first').show();
-
-// Click function
-$('#tabs-nav li').click(function(){
-  $('#tabs-nav li').removeClass('active');
-  $(this).addClass('active');
-  $('.tab-content').hide();
-  
-  var activeTab = $(this).find('a').attr('href');
-  $(activeTab).fadeIn();
-  return false;
-});
-</script> */}
-
-
 
 
 

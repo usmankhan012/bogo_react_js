@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AboutUs() {
     return (
@@ -20,7 +21,6 @@ function AboutUs() {
                         <div className="col-md-6">
                             <div className="about_right_section">
                                 <div className="about_right_inner_section">
-                                {/* <h1>nfdjdn</h1> */}
                                     <img src="/images/Iphone.png" alt="" />
                                 </div>
                             </div>
@@ -65,14 +65,14 @@ function AboutUs() {
                                                 Increase foot traffic and sustainably grow your profitability
                                                 with The BOGO App’s Dynamic Campaign Management system
                                             </p>
-                                            <a href="/website/pages/business"
+                                            <Link to="/Business"
                                             >BOGO For Business
                                                 <img
-                                                    src="/website/images/arrow_forward_24px.png"
+                                                    src="/images/arrow_forward_24px.png"
                                                     alt=""
                                                     className="img-fluid pl-2"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -83,14 +83,14 @@ function AboutUs() {
                                                 to help them increase their online following and reach new
                                                 audience
                                             </p>
-                                            <a href="/website/pages/brand_ambassadors"
+                                            <Link to="/brand_ambassadors"
                                             >BOGO Brand Ambassadors
                                                 <img
-                                                    src="/website/images/arrow_forward_24px.png"
+                                                    src="/images/arrow_forward_24px.png"
                                                     alt=""
                                                     className="img-fluid pl-2"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

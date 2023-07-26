@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import './App.css';
 
 
@@ -28,25 +29,28 @@ function Header() {
                                 <a className="nav-link" href="/website/index">How it Works </a>
                             </li> --> */}
                             <li className="nav-item">
-                                <a className="nav-link" href="/website/pages/pricing">Pricing</a>
+                                <Link className="nav-link" to="/pricing">Pricing</Link>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/components/AboutUs">About Us</a>
+                            
+                                <Link className="nav-link" to="/AboutUs">About Us</Link>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/website/pages/brand_ambassadors"
-                                >Brand Ambassadors</a>
+                                <Link className="nav-link" to="/brand_ambassadors"
+                                >Brand Ambassadors</Link>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/website/pages/business"
-                                >BOGO for Business</a>
+                                <Link className="nav-link" to="/business"
+                                >BOGO for Business</Link>
                             </li>
 
                             <li className="nav-item">
-                                <a href="/website/user/login" className="nav-link">Login</a>
+                                {/* <Link className='nav-link' to="/Login">Login</Link> */}
+                                <Link className="nav-link" to="/Login">Login</Link>
+
                             </li>
                             <li>
                                 <div className="d-flex navbuttons">
@@ -56,11 +60,11 @@ function Header() {
                                     >
                                         Login
                                     </button> --> */}
-                                    <a href="/website/user/login">
+                                    <Link to="/Getregister">
                                         <button type="button" className="btn btn-primary">
                                             Register
                                         </button>
-                                    </a>
+                                    </Link>
                                     <div id="popup1" className="popup">
                                         <div className="login-container">
                                             <h2>Login</h2>
@@ -83,6 +87,8 @@ function Header() {
                     </div>
                 </div>
             </nav>
+
+          
             {/* <!-- Nave Bar  --> */}
 
             {/* <!-- Login Popup Modal --> */}

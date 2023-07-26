@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Login() {
     return (
@@ -42,8 +43,8 @@ function Login() {
                                                 ></i>
                                             </div>
                                             <div className="user_login_forget_pass">
-                                                <a href="/website/forget_password" className="forgot-password"
-                                                >Forgot password?</a>
+                                                <Link to="/Forget_password" className="forgot-password"
+                                                >Forgot password?</Link>
                                             </div>
                                             <div className="user_login_btn-box">
                                                 <button className="user_login_btn btn">Login</button>
@@ -61,24 +62,24 @@ function Login() {
                                     <div className="registation-option-row">
                                         <div className="registation-col">
                                             <div >
-                                                <a href="/website/appuser/register" className="customer_option option_regis"
+                                                <Link to="/App_userregister" className="customer_option option_regis"
                                                 ><img
                                                         src="/images/customer-regis.png"
                                                         alt="customer_img"
                                                         className="aos-init aos-animate img-fluid"
-                                                    /></a>
+                                                    /></Link>
                                             </div>
                                             <h6>Customer</h6>
                                         </div>
 
                                         <div className="registation-col">
                                             <div >
-                                                <a href="/website/user/register" className="merchant_option option_regis"
+                                                <Link to="/Getregister" className="merchant_option option_regis"
                                                 ><img
                                                         src="/images/merchangt_regis.png"
                                                         alt="customer_img"
                                                         className="aos-init aos-animate img-fluid"
-                                                    /></a>
+                                                    /></Link>
                                             </div>
                                             <h6>Merchant</h6>
                                         </div>

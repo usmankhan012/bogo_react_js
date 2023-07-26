@@ -8,7 +8,7 @@ function VoucherDetails() {
             <div>
                 <nav className="navbar navbar-expand-lg" style={{backgroundColor: "#88c641"}}>
                     <div className="container">
-                        <a className="navbar-brand text-white" href="index.html"><img src="images/Bogo-White 2.png" alt="" /></a>
+                        <a className="navbar-brand text-white" href="index.html"><img src="/images/Bogo-White 2.png" alt="" /></a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i className="fas fa-bars"></i>
